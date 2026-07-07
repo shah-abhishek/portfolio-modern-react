@@ -18,7 +18,7 @@ export default function Hero() {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5 }}
           >
-            <img className="w-40 h-40 rounded-full shadow-xl border-4 border-primary/50 object-cover" alt="Abhishek Kumar profile picture" src="/AbhishekProfilePic.jpeg" />
+            <img className="w-40 h-40 rounded-full shadow-xl border-4 border-primary/50 object-cover" alt="Abhishek Kumar profile picture" src="/AbhishekProfilePic.jpg" />
           </motion.div>
 
           <motion.h1
@@ -36,7 +36,7 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4, duration: 0.7 }}
           >
-            A passionate React & Next.js Developer with 3 years of experience building modern web applications.
+            A passionate React & Next.js Developer with 4 years of experience building modern web applications.
           </motion.p>
 
           <motion.div
