@@ -17,7 +17,7 @@ export default function Footer() {
               <span className="text-xl font-bold text-white">Abhishek Kumar</span>
             </div>
             <p className="text-slate-400 mb-4 text-sm leading-relaxed">
-              React & Next.js Developer passionate about building modern, responsive, and user-friendly web applications.
+              Software Engineer building scalable frontend and AI-powered web applications with React.js, Next.js, TypeScript, and FastAPI.
             </p>
           </div>
           

@@ -6,9 +6,11 @@ import { Award, Briefcase, Calendar, GraduationCap, Mail, MapPin, Phone, UserChe
 export default function About() {
   const personalDetails = [
     { icon: <Mail className="h-5 w-5 text-primary" />, label: "Email", value: "abhikumar0123252@gmail.com" },
-    { icon: <GraduationCap className="h-5 w-5 text-primary" />, label: "Graduation", value: "2022 Batch" },
-    { icon: <Briefcase className="h-5 w-5 text-primary" />, label: "Experience", value: "4 Years (React & Next.js)" },
+    { icon: <MapPin className="h-5 w-5 text-primary" />, label: "Location", value: "Modinagar, India" },
+    { icon: <GraduationCap className="h-5 w-5 text-primary" />, label: "Education", value: "B.Tech IT — R.D. Engineering College, Ghaziabad (2018–2022)" },
+    { icon: <Briefcase className="h-5 w-5 text-primary" />, label: "Experience", value: "4+ Years (React, Next.js & AI)" },
     { icon: <Calendar className="h-5 w-5 text-primary" />, label: "Joined Varaisys", value: "Jan 17, 2022" },
+    { icon: <Award className="h-5 w-5 text-primary" />, label: "Certifications", value: "Meta React • Gen AI: Beyond the Chatbot • GitHub Copilot • Claude Code" },
   ];
 
   return (
@@ -40,11 +42,11 @@ export default function About() {
             </h2>
 
             <p className="text-lg mb-6 text-muted-foreground">
-              I'm Abhishek Kumar, a dedicated React and Next.js Developer with a strong passion for creating intuitive and high-performance web applications. With 4 years of hands-on experience at Varaisys Pvt Ltd, I've honed my skills in frontend technologies and agile development practices.
+              I'm Abhishek Kumar, a Software Engineer with 4+ years of experience building scalable frontend and AI-powered web applications using React.js, Next.js, TypeScript, and FastAPI. I specialize in high-performance dashboards, large-scale data visualization (5M+ records), and modern frontend architecture.
             </p>
 
             <p className="text-lg mb-8 text-muted-foreground">
-              I graduated in 2022 and quickly transitioned into a professional development role, eager to contribute to impactful projects and continuously learn new technologies. I thrive in collaborative environments and am always looking for opportunities to solve complex problems with elegant solutions.
+              I'm experienced in RAG systems, LLM integrations, hybrid search, vector databases, and enterprise SaaS applications, with strong expertise in frontend performance optimization, reusable component architecture, and state management. I thrive in collaborative, Agile environments and love solving complex problems with elegant solutions.
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-4 mb-8">

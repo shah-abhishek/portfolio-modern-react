@@ -7,12 +7,20 @@ import { Github, ExternalLink, Eye } from "lucide-react";
 
 const projects = [
   {
-    title: "E-commerce Platform",
-    description: "A full-featured e-commerce website with product listings, cart functionality, user authentication, and an admin panel. Built with Next.js, TailwindCSS, and MongoDB.",
+    title: "AI-Powered Dubai Business Assistant (RAG System)",
+    description: "An intelligent chatbot built on RAG architecture with hybrid search (database + semantic + web search), conversational memory, personalized responses, and file-based Q&A workflows. Backend powered by FastAPI, pgvector, and automated ingestion pipelines with LLM-based response generation.",
     image: "/projects/github.png",
-    tags: ["Next.js", "React", "TailwindCSS", "MongoDB", "Stripe"],
+    tags: ["RAG", "FastAPI", "pgvector", "LLM", "Hybrid Search"],
     liveLink: "#",
-    githubLink: "#",
+    githubLink: "https://github.com/shah-abhishek",
+  },
+  {
+    title: "HRMS Management Portal",
+    description: "A full-featured HRMS management portal with employee management, attendance tracking, leave management, and payroll processing. Built with Next.js, TailwindCSS, and MongoDB.",
+    image: "/projects/hrms.png",
+    tags: ["Next.js", "React", "TailwindCSS", "Antigravity"],
+    liveLink: "https://internalhrms.developerbudy.in/",
+    githubLink: "https://github.com/shah-abhishek/Internal-HRMS",
   },
   {
     title: "Task Management App",

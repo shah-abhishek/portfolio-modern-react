@@ -2,38 +2,38 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
-import { Code, Layers, Database, Server, Smartphone, GitBranch } from "lucide-react";
+import { Code, Database, Server, BrainCircuit, BarChart3, Zap } from "lucide-react";
 
 const skills = [
   {
     icon: <Code className="h-10 w-10 text-primary" />,
     title: "Frontend Development",
-    description: "React.js, Next.js, JavaScript (ES6+), HTML5, CSS3, TailwindCSS, Framer Motion.",
+    description: "React.js, Next.js, TypeScript, JavaScript, Redux Toolkit, Context API, Vite, Responsive Design.",
   },
   {
     icon: <Server className="h-10 w-10 text-primary" />,
     title: "Backend Development",
-    description: "Node.js, Express.js, RESTful APIs. Familiar with serverless functions.",
+    description: "FastAPI, Python, REST APIs. Scalable backend services and automated ingestion pipelines.",
   },
   {
     icon: <Database className="h-10 w-10 text-primary" />,
     title: "Databases",
-    description: "MongoDB, PostgreSQL, Firebase. Experience with ORMs like Mongoose.",
+    description: "PostgreSQL, pgvector, Redis. Vector databases for semantic search and AI workflows.",
   },
   {
-    icon: <Layers className="h-10 w-10 text-primary" />,
-    title: "UI/UX Principles",
-    description: "Responsive Design, User-Centered Design, Prototyping with Figma.",
+    icon: <BrainCircuit className="h-10 w-10 text-primary" />,
+    title: "AI / ML",
+    description: "RAG systems, LLM Integration, NLP, hybrid search, Claude, GitHub Copilot, Gemini.",
   },
   {
-    icon: <Smartphone className="h-10 w-10 text-primary" />,
-    title: "Mobile-First Approach",
-    description: "Developing applications that look and perform great on all devices.",
+    icon: <BarChart3 className="h-10 w-10 text-primary" />,
+    title: "Data Visualization",
+    description: "AG Grid, D3.js, Vega-Lite, Chart.js. Large dataset visualization (5M+ records) and dashboard engineering.",
   },
   {
-    icon: <GitBranch className="h-10 w-10 text-primary" />,
-    title: "Developer Tools",
-    description: "Git, GitHub, VS Code, npm/yarn, Webpack, Vite, Docker (basic).",
+    icon: <Zap className="h-10 w-10 text-primary" />,
+    title: "Performance & Tools",
+    description: "Lazy Loading, Code Splitting, Chunk-based Loading, Virtualization. Git, GitHub, VS Code, Agile, CI/CD.",
   },
 ];
 

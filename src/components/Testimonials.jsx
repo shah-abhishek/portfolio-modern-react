@@ -6,18 +6,33 @@ import { Briefcase, CalendarDays, Building, Users, CheckCircle } from "lucide-re
 
 const experiences = [
   {
-    company: "Varaisys Pvt Ltd",
-    role: "React & Next.js Developer",
-    duration: "Jan 2022 - Present (3+ years)",
-    description: "Developed and maintained scalable web applications using React.js, Next.js, and related technologies. Collaborated with cross-functional teams to deliver high-quality software solutions. Contributed to UI/UX design and API integration.",
+    company: "VARAISYS PVT. LTD., Noida",
+    role: "Software Engineer",
+    duration: "Jan 2022 - Jun 2026 (Intern: Jan 2022 - May 2022)",
+    description: "Building scalable SaaS dashboards and enterprise client applications using React.js, Next.js, and TypeScript, with a focus on high-performance visualization of large datasets and reusable frontend architecture.",
     responsibilities: [
-      "Building responsive user interfaces with React and Next.js.",
-      "State management using Redux, Zustand, or Context API.",
-      "Integrating RESTful APIs and GraphQL endpoints.",
-      "Writing unit and integration tests with Jest and React Testing Library.",
-      "Participating in agile ceremonies and code reviews.",
+      "Developed high-performance visualization systems handling datasets of 5M-10M records using AG Grid, D3.js, and Vega-Lite.",
+      "Improved UI responsiveness and reduced rendering latency through chunk-based loading, lazy loading, and optimized rendering strategies.",
+      "Led frontend development for the VRC (Visual Reliability Chart) project with reusable component architecture.",
+      "Built analytics platform (MAT) with custom chart editor, reporting workflows, and export functionality.",
+      "Integrated REST APIs and optimized frontend data flows for large-scale enterprise dashboards.",
+      "Contributed to AI-driven systems including Annotator, APS, and Quark9 for data annotation and interview automation.",
+      "Collaborated in Agile development workflows with cross-functional product and backend teams.",
     ],
-    logo: "varaisys-logo" 
+    logo: "varaisys-logo"
+  },
+  {
+    company: "Veryon",
+    role: "Software Engineer (Contract)",
+    duration: "Jan 2025 - Jan 2026",
+    description: "Delivered production-grade features across enterprise aviation platforms, combining modern React frontends with AI-powered capabilities inside a legacy .NET MVC architecture.",
+    responsibilities: [
+      "Developed ALICE, an AI-powered enterprise chatbot using AWS Bedrock trained on confidential aviation datasets.",
+      "Built a Global Search module using React, Vite, and TypeScript inside a legacy .NET MVC architecture.",
+      "Integrated modern frontend applications into legacy systems using iframe and .cshtml architecture.",
+      "Delivered production-grade features used across enterprise aviation platforms.",
+    ],
+    logo: "veryon-logo"
   },
   // Add more experiences if available
 ];
@@ -42,7 +57,7 @@ export default function Experience() {
     <section id="experience" className="py-20 relative overflow-hidden bg-gradient-to-br from-purple-50 via-indigo-50 to-sky-50 dark:from-gray-900 dark:via-slate-800 dark:to-slate-900">
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <motion.h2 
+          <motion.h2
             className="text-3xl md:text-4xl font-bold mb-4"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -51,7 +66,7 @@ export default function Experience() {
           >
             My <span className="gradient-text">Experience</span>
           </motion.h2>
-          <motion.p 
+          <motion.p
             className="text-lg text-muted-foreground"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -62,7 +77,7 @@ export default function Experience() {
           </motion.p>
         </div>
 
-        <motion.div 
+        <motion.div
           className="space-y-12"
           variants={container}
           initial="hidden"
@@ -70,8 +85,8 @@ export default function Experience() {
           viewport={{ once: true }}
         >
           {experiences.map((exp, index) => (
-            <motion.div 
-              key={index} 
+            <motion.div
+              key={index}
               variants={item}
             >
               <Card className="overflow-hidden shadow-xl card-hover border-primary/20 bg-white/70 dark:bg-slate-800/70 backdrop-blur-md">

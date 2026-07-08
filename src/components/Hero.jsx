@@ -36,7 +36,7 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4, duration: 0.7 }}
           >
-            A passionate React & Next.js Developer with 4 years of experience building modern web applications.
+            Software Engineer with 4+ years of experience building scalable frontend and AI-powered web applications using React.js, Next.js, TypeScript, and FastAPI.
           </motion.p>
 
           <motion.div

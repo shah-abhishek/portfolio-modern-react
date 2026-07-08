@@ -26,32 +26,14 @@ export default function Contact() {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // Basic formspree.io integration (replace with your Formspree endpoint)
-    // For a real project, you'd use a more robust solution or a backend.
-    // This is a placeholder for demonstration.
-    const formSpreeEndpoint = "https://formspree.io/f/YOUR_FORM_ID"; // Replace YOUR_FORM_ID
+    const formSpreeEndpoint = "https://formspree.io/f/xykqanak";
 
-    if (formSpreeEndpoint.includes("YOUR_FORM_ID")) {
-        console.warn("Formspree endpoint not configured. Please replace YOUR_FORM_ID.");
-        // Simulate success for demo purposes if not configured
-        setTimeout(() => {
-            setIsSubmitting(false);
-            toast({
-                title: "Message Sent (Demo)!",
-                description: "This is a demo. Configure Formspree for real submissions.",
-                variant: "default",
-                duration: 5000,
-            });
-            setFormData({ name: "", email: "", subject: "", message: "" });
-        }, 1500);
-        return;
-    }
-    
     try {
       const response = await fetch(formSpreeEndpoint, {
         method: 'POST',
         headers: {
-          'Accept': 'application/json'
+          'Accept': 'application/json',
+          'Content-Type': 'application/json'
         },
         body: JSON.stringify(formData)
       });
@@ -119,15 +101,13 @@ export default function Contact() {
                   <Mail className="h-5 w-5 text-primary" />
                   <a href="mailto:abhikumar0123252@gmail.com" className="text-muted-foreground hover:text-primary">abhikumar0123252@gmail.com</a>
                 </div>
-                {/* Add phone if desired, e.g.,
                 <div className="flex items-center gap-3">
                   <Phone className="h-5 w-5 text-primary" />
-                  <a href="tel:+910000000000" className="text-muted-foreground hover:text-primary">+91 XXXXX XXXXX</a>
-                </div> 
-                */}
+                  <a href="tel:+918439125152" className="text-muted-foreground hover:text-primary">+91-8439125152</a>
+                </div>
                 <div className="flex items-center gap-3">
                   <MapPin className="h-5 w-5 text-primary" />
-                  <span className="text-muted-foreground">Noida, India (Open to remote)</span>
+                  <span className="text-muted-foreground">Modinagar, India (Open to remote)</span>
                 </div>
               </div>
             </div>
